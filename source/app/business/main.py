@@ -7,8 +7,8 @@ from app.business.prediction import Prediction
 from app.business.random_forest_trainer import RandomForestTrainer
 from app.business.severity_statistics import SeverityStatistics
 from app.business.train_test import TrainTest
-from app.classifier_controller import ClassifierController
-from app.machine_learning_adapter import MachineLearningAdapter
+from app.business.classifier_controller import ClassifierController
+from app.adapter.machine_learning_adapter import MachineLearningAdapter
 from app.adapter.datas_adapter import DataAdapter
 
 if __name__ == '__main__':
@@ -27,7 +27,7 @@ if __name__ == '__main__':
     prediction = Prediction(classifier_controller, file_adapter, dataframe_adapter, data_adapter)
     data_train_dir = os.path.join(root_dir, "data/Data_Projet.csv")
     data = file_adapter.convert_csv_to_dict(data_train_dir)
-    threshold = [0.45, 0.46, 0.47, 0.48, 0.49, 0.5, 0.51, 0.52, 0.53]
+    threshold = [0.43, 0.44, 0.45, 0.46, 0.47, 0.48, 0.49, 0.5]
     models_data = train_test.train(threshold, data)
     best_model = model_evaluator.get_best_model(models_data)
     result_dir_path = os.path.join(root_dir, "result", str(time.time()))

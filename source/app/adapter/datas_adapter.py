@@ -22,7 +22,7 @@ class DataAdapter:
                 dataframes_default_false.append(dataframe)
         list_default_true = len(dataframes_default_true)
         list_default_false = len(dataframes_default_false)
-        train_default_false_number = (number_train_test-10) / 100 * list_default_false   # -10 : to avoid over-learning because of more samples with default false than true
+        train_default_false_number = number_train_test / 100 * list_default_false
         print("number of negative in train df: %d" % train_default_false_number)
         for i in range(int(train_default_false_number)):
             dataframes_train.append(dataframes_default_false.pop(0))

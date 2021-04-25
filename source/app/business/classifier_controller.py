@@ -1,7 +1,7 @@
 from typing import List
 
 from app.adapter.dataframe_adapter import DataframeAdapter
-from app.machine_learning_adapter import MachineLearningAdapter
+from app.adapter.machine_learning_adapter import MachineLearningAdapter
 from app.value_object.dataframe import Dataframe
 from app.value_object.model import Model
 

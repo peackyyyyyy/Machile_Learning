@@ -4,8 +4,8 @@ from app.adapter.dataframe_adapter import DataframeAdapter
 from app.adapter.file_adapter import FileAdapter
 from app.business.random_forest_trainer import RandomForestTrainer
 from app.business.severity_statistics import SeverityStatistics
-from app.classifier_controller import ClassifierController
-from app.machine_learning_adapter import MachineLearningAdapter
+from app.business.classifier_controller import ClassifierController
+from app.adapter.machine_learning_adapter import MachineLearningAdapter
 from app.adapter.datas_adapter import DataAdapter
 from app.value_object.model_data import ModelData
 

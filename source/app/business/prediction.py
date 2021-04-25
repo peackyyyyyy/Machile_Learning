@@ -4,7 +4,7 @@ import os
 from app.adapter.dataframe_adapter import DataframeAdapter
 from app.adapter.datas_adapter import DataAdapter
 from app.adapter.file_adapter import FileAdapter
-from app.classifier_controller import ClassifierController
+from app.business.classifier_controller import ClassifierController
 from app.value_object.model_data import ModelData
 
 

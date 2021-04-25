@@ -1,4 +1,4 @@
-from app.machine_learning_adapter import MachineLearningAdapter
+from app.adapter.machine_learning_adapter import MachineLearningAdapter
 from app.value_object.dataframe import Dataframe
 
 

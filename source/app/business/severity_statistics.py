@@ -1,5 +1,5 @@
 from app.adapter.dataframe_adapter import DataframeAdapter
-from app.classifier_controller import ClassifierController
+from app.business.classifier_controller import ClassifierController
 from app.value_object.dataframe import Dataframe
 from app.value_object.model import Model
 from app.value_object.statistics import Statistics
