@@ -1,0 +1,6 @@
+Model 8 stats:
+Model threshold : 0.52
+positives_rate :0.6222222222222222
+negatives_rate :0.8451327433628318
+false_positives_rate :0.15486725663716813
+false_negatives_rate :0.37777777777777777
