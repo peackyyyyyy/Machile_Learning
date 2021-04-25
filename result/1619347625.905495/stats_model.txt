@@ -1,0 +1,6 @@
+Model 3 stats:
+Model threshold : 0.44
+positives_rate :0.7444444444444445
+negatives_rate :0.8013245033112583
+false_positives_rate :0.1986754966887417
+false_negatives_rate :0.25555555555555554
