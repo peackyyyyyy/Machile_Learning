@@ -11,6 +11,7 @@ Well you must submit yur dataset (at csv format) in the data file.
 Then change the name of the file in main (I'll manage to make it useless then and make a path walker that find the files alone).
 You are able to change the threshold for the ramdom forest classifier and then make it run, check the statistics of your model, 
 and get the prediction in the directory result and on the "timestamp" repertory. The label of dataset to predict is "default",
-I must make it flexible when I'll make the CLI.
+I must make it flexible when I'll make the CLI. So the learning will practice some with some threshold and with different train/set which is 80/20 % aprroximately. In the dataset about 70% are negative "default", and 30% are positive. 
+So that could explain a over learning on negative "default" data, that is why I managed to make the threshold flexible.
 
 A lot of improvement needs to be done, about configurations of variables, and make it more user-friendly, but anyway enjoy it.
